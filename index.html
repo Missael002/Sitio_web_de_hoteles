@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>!UAY¡Hoteles</title>
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <!-- swiper js cdn link -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- custom css link -->
+   <link rel="stylesheet" href="style.css">
+   
+   <style>
+      p {
+         font-size: 13px; /* Tamaño de letra original para la etiqueta <p> */
+      }
+
+      h1 + p {
+         font-size: 20px; /* Tamaño de letra aumentado para la etiqueta <p> después de <h1> */
+      }
+
+      .content h1 {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         z-index: 2;
+      }
+
+      .container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Ajusta la altura según tus necesidades */
+  overflow: hidden;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.image-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: slideshow 8s infinite;
+  z-index: 0;
+}
+
+@keyframes slideshow {
+  0%, 20% {
+    opacity: 0;
+    z-index: 1;
+  }
+  25%, 45% {
+    opacity: 1;
+    z-index: 2;
+  }
+  50%, 100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+   </style>
+
+</head>
+<!--
+   <style>
+      h1 {
+         font-style: 20px;
+      }
+   </style>
+<body>
+-->
+   <!-- header -->
+<body>
+   <header class="header">
+
+      <a href="#" class="logo"> <i class="fas fa-hotel"></i>¡UAY!Hoteles</a>
+
+      <nav class="navbar">
+         <a href="Repositorio.html" class="btn">Hoteles</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </header>
+
+   <!-- end -->
+
+   <!-- home -->
+
+   <section class="home" id="home">
+
+      <div class="swiper home-slider">
+
+         <div class="swiper-wrapper">
+            
+            <div class="swiper-slide slide" style="background: url(images2/1.jpg) no-repeat;">
+               <div class="content">
+                  <h3>BIENVENIDO AL MUNDO MAYA</h3>
+                 
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images2/2.jpg) no-repeat;">
+               <div class="content">
+                  <h3>BIENVENIDO AL MUNDO MAYA</h3>
+                  
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images2/3.jpg) no-repeat;">
+               <div class="content">
+                  <h3>BIENVENIDO AL MUNDO MAYA</h3>
+                 
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images2/4.jpg) no-repeat;">
+               <div class="content">
+                  <h3>BIENVENIDO AL MUNDO MAYA</h3>
+        
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+
+      </div>
+
+   </section>
+
+   
+   <!-- end -->
+
+
+   <!-- room -->
+
+   <section class="room" id="room">
+
+      <h1 class="heading">Hoteles</h1>
+      <p> En UAY¡Hoteles! nos precoupamos por su estadia, por eso mismo nuestro repertorio cuenta
+         con un gran numero de hoteles que se acomodaran tanto a su presupuesto como a sus gustos
+      </p>
+      <div class="swiper room-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <div class="image">
+               <!--   <span class="price">$450/night</span> -->
+                  <img src="images2/2.jpg" alt="">
+               <!--   <a href="#" class="fas fa-shopping-cart"></a> -->
+               </div>
+               
+               <div class="content">
+                  <h3>Hotel Posada Escarcega</h3>
+                  <p>Las habitaciones están equipadas con TV
+                      por cable. Todas las habitaciones del Hotel 
+                      Posada Escarcega cuentan con 
+                      aire acondicionado y baño privado</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="Hotel Posada Escarcega.html" class="btn">Ver mas</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+               <!--   <span class="price">$15.99/night</span> -->
+                  <img src="images2/Hotel Keren.jpg" alt="">
+               <!--   <a href="#" class="fas fa-shopping-cart"></a> -->
+               </div>
+               <div class="content">
+                  <h3>Hotel Keren</h3>
+                  <p>¿Buscas donde alojarte en Escarcega? Entonces 
+                     no te pierdas Hotel Keren, un hotel pequeño que
+                     te acerca a lo mejor de Escarcega.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">Ver mas</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+               <!--   <span class="price">$15.99/night</span>  -->
+                  <img src="images2/Hotel Akimpech.jpg" alt=""> 
+                <!--  <a href="Hotel Akimpech.html" class="fas fa-shopping-cart"></a> -->
+               </div>
+               <div class="content">
+                  <h3>Hotel Akimpech</h3>
+                  <p>Con una estancia en el Hotel Akimpech en 
+                     Escárcega, usted será conveniente Plaza Escárcega Escárcega y
+                     Palacio Municipal. Este hotel se encuentra muy cerca del
+                      Instituto Tecnológico Superior de Escarcega. estancia en una de 27 habitaciones </p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="Hotel Akimpech.html" class="btn">Ver mas</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                <!--  <span class="price">$650/night</span>  -->
+                  <img src="images2/Hotel Real Expres.jpg" alt="">
+                <!--  <a href="#" class="fas fa-shopping-cart"></a>  -->
+               </div>
+               <div class="content">
+                  <h3>Hotel Global Expres</h3>
+                  <p>Cuando visites Escárcega, considera Hotel Global Express, 
+                     una excelente opción para hospedarse. Después de divertirte 
+                     en la alberca al aire libre, puedes disfrutar de una comida o un 
+                     bocadillo en el restaurante.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="Hotel Global Expres.html" class="btn">Ver mas</a>
+               </div>
+            </div>
+
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+
+      </div>
+
+   </section>
+   <!-- end -->
+
+   <!-- footer -->
+   <section class="footer">
+
+      <div class="box-container">
+          <!--
+         <div class="box">
+            <h3>Contactos</h3>
+            <a href="#"> <i class="fas fa-phone"></i> Telefono</a>
+            <a href="#"> <i class="fas fa-phone"></i> b</a>
+            <a href="#"> <i class="fas fa-envelope"></i> c</a>
+            <a href="#"> <i class="fas fa-map"></i> d</a>
+         </div>
+        
+         <div class="box">
+            <h3>Otros links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> a</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> b</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> c</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> d</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> e</a>
+         </div>
+
+         <div class="box">
+            <h3>Extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> a</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> b</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> c</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> d</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> e</a>
+         </div>
+            -->
+      </div>
+
+      <div class="share">
+         <a href="#" class="fab fa-facebook-f"></a>
+         <a href="#" class="fab fa-instagram"></a>
+         <a href="#" class="fab fa-twitter"></a>
+         <a href="#" class="fab fa-pinterest"></a>
+      </div>
+   </section>
+   <!-- end -->
+
+
+
+
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+   <script src="script.js"></script>
+
+ </body> 
+</html>

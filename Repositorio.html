@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <style>
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+   body {
+    background-color: #FAD7A0;
+    
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #F39C12;
+    border-radius: .5rem;
+}
+
+section{
+    padding: 5rem 7%;
+}
+.heading{
+    font-size: 4rem;
+    color: #F39C12;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+      
+      
+
+    h1 {
+      color: white;
+      
+      text-align: center;
+ 
+    }
+
+    .hotel-container {
+      
+      width: 80rem;
+      margin: 0 auto;
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-gap: 120px;
+      justify-items: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .hotel {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .titulo {
+  
+      background-color: white;
+   
+    }
+
+    .hotel:hover {
+      transform: scale(1.05);
+    }
+
+    .hotel img {
+      max-width: 50%;
+      height: auto;
+    }
+
+    .hotel h2 {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      /* Cambiar el cursor al hacer hover en el nombre del hotel */
+    }
+
+    .hotel p {
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .hotel ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hotel ul li {
+    font-size: 14px;
+    color: #666;
+    padding: .5rem 0; 
+    }
+
+    a{
+    color:  #1644A2;
+}
+
+.header{
+
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: orange;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20PX;
+}
+
+  </style>
+</head>
+
+<header class="header">
+<h1>Hoteles</h1>
+</header>
+
+<body>
+
+  <div class="hotel-container">
+
+    <div class="hotel">
+      <img src="images2/Hotel Real Primavera.jpg" alt="Imagen del Hotel 2">
+      <h2>Hotel Real Primavera</h2>
+      <p></p>
+      <ul>
+        <li>Habitacion Sencilla</li>
+        <li>Precio por noche: $640</li>
+        <a href=HotelReal.html>
+          <h2>Mas información</h2>
+        </a> <!-- Agregar el enlace al hacer clic en el nombre del hotel -->
+      </ul>
+    </div>
+
+    <div class="hotel">
+      <img src="images2/Hotel Escarcega.jpg" alt="Imagen del Hotel 2">
+      <h2>Hotel Escarcega</h2>
+      <p></p>
+      <ul>
+        <li>Precio por noche: $400</li>
+        <a href="HotelEscarcega.html">
+          <h2>Mas información</h2>
+        </a> <!-- Agregar el enlace al hacer clic en el nombre del hotel -->
+      </ul>
+    </div>
+
+    <div class="hotel">
+      <img src="images2/Hotel Real Expres.jpg" alt="Imagen del Hotel 3">
+      <h2>Hotel Global Expres</h2>
+      <p></p>
+      <ul>
+        <li>Precio por noche: $797</li>
+        <a href="Hotel Global Expres.html">
+          <h2>Mas información</h2>
+        </a> <!-- Agregar el enlace al hacer clic en el nombre del hotel -->
+      </ul>
+    </div>
+
+
+    <div class="hotel">
+      <img src="images2/Hotel Tutul-ha.jpg" alt="Imagen del Hotel 4">
+      <h2>Hotel Tutul Ha</h2>
+      <p></p>
+      <ul>
+        <li>Precio por noche: $500</li>
+        <a href="Hotel Tutul Ha.html">
+          <h2>Mas información</h2>
+        </a> <!-- Agregar el enlace al hacer clic en el nombre del hotel -->
+      </ul>
+    </div>
+
+
+    <div class="hotel">
+      <img src="images2/Hotel Keren.jpg" alt="Imagen del Hotel 5">
+      <h2>Hotel keren</h2>
+      <p></p>
+      <ul>
+        <li>Precio por noche: $600</li>
+        <a href="Hotel Keren.html">
+          <h2>Mas información</h2>
+        </a> <!-- Agregar el enlace al hacer clic en el nombre del hotel -->
+      </ul>
+    </div>
+
+
+
+
+    <div class="hotel">
+      <img src="images2/Hotel Akimpech.jpg" alt="Imagen del Hotel 6">
+      <h2>Hotel Akimpech</h2>
+      <p></p>
+      <ul>
+        <li>Precio por noche: $670</li>
+        <a href="Hotel Akimpech.html">
+          <h2>Mas información</h2>
+        </a> <!-- Agregar el enlace al hacer clic en el nombre del hotel -->
+      </ul>
+    </div>
+
+
+
+
+    <div class="hotel">
+      <img src="images2/Hotel Posada Escarcega.jpg" alt="Imagen del Hotel 7">
+      <h2>Hotel Posada Escarcega </h2>
+      <p></p>
+      <ul>
+        <li>Precio por noche: $450</li>
+        <a href="Hotel Posada Escarcega.html">
+          <h2>Mas información</h2>
+        </a> <!-- Agregar el enlace al hacer clic en el nombre del hotel -->
+      </ul>
+    </div>
+
+    <div class="hotel">
+      <img src="images2/Hotel el Yucateco.jpg" alt="Imagen del Hotel 7">
+      <h2>Hotel El Yucateco </h2>
+      <p></p>
+      <ul>
+        <li>Precio por noche: $450</li>
+        <a href="Hotel Yucateco.html">
+          <h2>Mas información</h2>
+        </a> <!-- Agregar el enlace al hacer clic en el nombre del hotel -->
+      </ul>
+    </div>
+
+    <div class="hotel">
+      <img src="images2/GRAN  HOTEL COLONIAL DEL SURESTE.jpg" alt="Imagen del Hotel 7">
+      <h2>Hotel Colonial </h2>
+      <p>.</p>
+      <ul>
+        <li>Precio por noche: $780</li>
+        <a href="Hotel Colonial.html">
+          <h2>Mas información</h2>
+        </a> <!-- Agregar el enlace al hacer clic en el nombre del hotel -->
+      </ul>
+    </div>
+
+
+
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+      <meta charset="UTF-8">
+      <title>Mi página web</title>
+      <style>
+        /* Estilo para el botón */
+        .boton-hoteles {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: orange;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 8px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      </style>
+    </head>
+
+    <body>
+      <!-- Contenido de la página aquí -->
+
+      <!-- Botón de Hoteles -->
+      <a href=index.html><button class="boton-hoteles">Atras</button></a>
+    </body>
+
+    </html>
